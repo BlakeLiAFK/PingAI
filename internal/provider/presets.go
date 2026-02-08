@@ -1,0 +1,200 @@
+package provider
+
+// GetPresets 返回内置厂商预设列表
+func GetPresets() []Provider {
+	return []Provider{
+		{
+			ID:       "openai",
+			Name:     "OpenAI",
+			BaseURL:  "https://api.openai.com/v1",
+			Protocol: "openai",
+			Models: []string{
+				"gpt-4o",
+				"gpt-4o-mini",
+				"gpt-4-turbo",
+				"gpt-4",
+				"gpt-3.5-turbo",
+				"o1",
+				"o1-mini",
+				"o3-mini",
+			},
+		},
+		{
+			ID:       "anthropic",
+			Name:     "Anthropic",
+			BaseURL:  "https://api.anthropic.com/v1",
+			Protocol: "anthropic",
+			Models: []string{
+				"claude-sonnet-4-20250514",
+				"claude-haiku-4-20250414",
+				"claude-3-5-sonnet-20241022",
+				"claude-3-5-haiku-20241022",
+				"claude-3-opus-20240229",
+			},
+		},
+		{
+			ID:       "gemini",
+			Name:     "Google Gemini",
+			BaseURL:  "https://generativelanguage.googleapis.com/v1beta",
+			Protocol: "gemini",
+			Models: []string{
+				"gemini-2.0-flash",
+				"gemini-2.0-flash-lite",
+				"gemini-1.5-pro",
+				"gemini-1.5-flash",
+			},
+		},
+		{
+			ID:       "deepseek",
+			Name:     "DeepSeek",
+			BaseURL:  "https://api.deepseek.com/v1",
+			Protocol: "openai",
+			Models: []string{
+				"deepseek-chat",
+				"deepseek-reasoner",
+			},
+		},
+		{
+			ID:       "qwen",
+			Name:     "Qwen (通义千问)",
+			BaseURL:  "https://dashscope.aliyuncs.com/compatible-mode/v1",
+			Protocol: "openai",
+			Models: []string{
+				"qwen-max",
+				"qwen-plus",
+				"qwen-turbo",
+				"qwen-long",
+				"qwen-vl-max",
+			},
+		},
+		{
+			ID:       "doubao",
+			Name:     "Doubao (豆包)",
+			BaseURL:  "https://ark.cn-beijing.volces.com/api/v3",
+			Protocol: "openai",
+			Models: []string{
+				"doubao-1.5-pro-32k",
+				"doubao-1.5-lite-32k",
+				"doubao-pro-32k",
+				"doubao-lite-32k",
+			},
+		},
+		{
+			ID:       "zhipu",
+			Name:     "Zhipu (智谱)",
+			BaseURL:  "https://open.bigmodel.cn/api/paas/v4",
+			Protocol: "openai",
+			Models: []string{
+				"glm-4-plus",
+				"glm-4",
+				"glm-4-flash",
+				"glm-4-long",
+			},
+		},
+		{
+			ID:       "moonshot",
+			Name:     "Moonshot (月之暗面)",
+			BaseURL:  "https://api.moonshot.cn/v1",
+			Protocol: "openai",
+			Models: []string{
+				"moonshot-v1-8k",
+				"moonshot-v1-32k",
+				"moonshot-v1-128k",
+			},
+		},
+		{
+			ID:       "baichuan",
+			Name:     "Baichuan (百川)",
+			BaseURL:  "https://api.baichuan-ai.com/v1",
+			Protocol: "openai",
+			Models: []string{
+				"Baichuan4",
+				"Baichuan3-Turbo",
+				"Baichuan3-Turbo-128k",
+			},
+		},
+		{
+			ID:       "siliconflow",
+			Name:     "SiliconFlow (硅基流动)",
+			BaseURL:  "https://api.siliconflow.cn/v1",
+			Protocol: "openai",
+			Models: []string{
+				"deepseek-ai/DeepSeek-V3",
+				"deepseek-ai/DeepSeek-R1",
+				"Qwen/Qwen2.5-72B-Instruct",
+				"meta-llama/Llama-3.3-70B-Instruct",
+			},
+		},
+		{
+			ID:       "lingyiwanwu",
+			Name:     "01.AI (零一万物)",
+			BaseURL:  "https://api.lingyiwanwu.com/v1",
+			Protocol: "openai",
+			Models: []string{
+				"yi-large",
+				"yi-medium",
+				"yi-spark",
+			},
+		},
+		{
+			ID:       "groq",
+			Name:     "Groq",
+			BaseURL:  "https://api.groq.com/openai/v1",
+			Protocol: "openai",
+			Models: []string{
+				"llama-3.3-70b-versatile",
+				"llama-3.1-8b-instant",
+				"mixtral-8x7b-32768",
+				"gemma2-9b-it",
+			},
+		},
+		{
+			ID:       "mistral",
+			Name:     "Mistral",
+			BaseURL:  "https://api.mistral.ai/v1",
+			Protocol: "openai",
+			Models: []string{
+				"mistral-large-latest",
+				"mistral-medium-latest",
+				"mistral-small-latest",
+				"open-mistral-nemo",
+			},
+		},
+		{
+			ID:       "openrouter",
+			Name:     "OpenRouter",
+			BaseURL:  "https://openrouter.ai/api/v1",
+			Protocol: "openai",
+			Models: []string{
+				"openai/gpt-4o",
+				"anthropic/claude-3.5-sonnet",
+				"google/gemini-2.0-flash-exp:free",
+				"meta-llama/llama-3.3-70b-instruct",
+			},
+		},
+		{
+			ID:       "antigravity",
+			Name:     "Antigravity Tools",
+			BaseURL:  "http://127.0.0.1:8045/v1",
+			Protocol: "openai",
+			Models: []string{
+				"gemini-3-flash",
+				"gemini-3-pro-high",
+				"claude-sonnet-4-5",
+			},
+		},
+		{
+			ID:       "ollama",
+			Name:     "Ollama",
+			BaseURL:  "http://localhost:11434/v1",
+			Protocol: "openai",
+			Models: []string{
+				"llama3.3",
+				"qwen2.5",
+				"deepseek-r1",
+				"gemma2",
+				"phi4",
+			},
+		},
+	}
+}
