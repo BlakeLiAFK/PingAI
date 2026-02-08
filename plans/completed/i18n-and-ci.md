@@ -1,7 +1,7 @@
 # i18n 国际化 + GitHub Actions CI
 
 > 创建: 2026-02-08
-> 状态: 进行中
+> 状态: 已完成
 
 ## 目标
 
@@ -15,12 +15,12 @@
 - [x] 移除 types/index.ts 中的硬编码 CHECK_ITEM_NAMES
 - [x] 前端编译验证通过
 - [x] Go 编译和测试通过
-- [ ] 创建 .github/workflows/build.yml (Win/Mac/Linux)
-- [ ] 创建 .gitignore
-- [ ] Git 初始化并推送到 github.com:BlakeLiAFK/PingAI.git
+- [x] 创建 .github/workflows/build.yml (Win/Mac/Linux)
+- [x] 创建 .gitignore
+- [x] Git 初始化并推送到 github.com:BlakeLiAFK/PingAI.git
 
 ## 完成标准
 
 - [x] 切换语言后所有界面文字即时切换
-- [ ] GitHub Actions 能构建三端产物
-- [ ] 代码已推送到远程仓库
+- [x] GitHub Actions 能构建三端产物
+- [x] 代码已推送到远程仓库
